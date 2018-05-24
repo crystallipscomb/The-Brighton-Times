@@ -1,0 +1,58 @@
+/*
+ *
+ * Breakpoints
+*
+*/
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+
+@media screen and (min-width:500px) {
+  .hero,.top-news {
+    width: 50%;
+  }
+}
+
+
+
+/*
+ *
+ * Responsive Table & Minor Breakpoints
+*
+*/
+@media screen and (max-width:500px) {
+  table, thead, tbody, th, td, tr {
+    display: run-in;
+  }
+  th.teamTwo {
+    display: none;
+  }
+  td.teamTwo {
+    display:none;
+  }
+  body {
+    font-size: 15px;
+  }
+  ul.footer {
+    display:  block;
+    text-align: left;
+  }
+  img.snippet__thumbnail {
+    display:none;
+  }
+}
+
+@media screen and (min-width:900px) {
+  .hero {
+    width: 100%;
+  }
+  .top-news {
+    width:100%;
+  }
+  /*  .recent-news,.weather {
+      width: 50%
+    } trouble with getting recent news to show 50% */
